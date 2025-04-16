@@ -7,6 +7,7 @@ const root = resolve(__dirname, 'src')
 const outDir = resolve(__dirname, 'dist')
 
 export default defineConfig({
+  base: '/100DaysCSS/',
   plugins: [
     tailwindcss(),
   ],
