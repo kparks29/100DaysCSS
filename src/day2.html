@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="main.css" rel="stylesheet" />
+    <title>Day 2</title>
+  </head>
+  <body class="h-svh w-svw">
+    <div id="frame" class="h-screen w-screen bg-emerald-500 flex justify-center items-center">
+      <!-- Code Here -->
+       <div onclick="handleOnClick()">
+          <div id="top" class="h-2 w-18 mb-3 rounded-md bg-white drop-shadow-md shadow-gray-600"></div>
+          <div id="middle" class="h-2 w-18 mb-3 rounded-md bg-white drop-shadow-md shadow-gray-600"></div>
+          <div id="bottom" class="h-2 w-18 rounded-md bg-white drop-shadow-md shadow-gray-600 "></div>
+       </div>
+    </div>
+    <script>
+      function addClass(elements, className) {
+        const suffixes = ['top', 'middle', 'bottom']
+        for (let i=0; i<elements.length; i++) {
+          elements[i].classList.add(className + suffixes[i])
+        }
+      }
+
+      function removeClass(elements, className) {
+        const suffixes = ['top', 'middle', 'bottom']
+        for (let i=0; i<elements.length; i++) {
+          elements[i].classList.remove(className + suffixes[i])
+          void elements[i].offsetHeight // force reflow
+        }
+      }
+
+      function handleOnClick() {
+        const elements = [
+          document.querySelector('#top'),
+          document.querySelector('#middle'),
+          document.querySelector('#bottom')
+        ]
+
+        if (elements[0].classList.contains('animate-hamburger-close-top')) {
+          removeClass(elements, 'animate-hamburger-close-')
+          addClass(elements, 'animate-hamburger-open-')
+        } else if (elements[0].classList.contains('animate-hamburger-open-top')) {
+          removeClass(elements, 'animate-hamburger-open-')
+          addClass(elements, 'animate-hamburger-close-')
+        } else {
+          addClass(elements, 'animate-hamburger-close-')
+        }
+      }
+    </script>
+  </body>
+</html>

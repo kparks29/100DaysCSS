@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Courier New', 'Courier', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Day 2 */
+@theme {
+  --animate-hamburger-close-top: hamburger-close-top 0.7s ease-in-out forwards;
+  --animate-hamburger-close-middle: hamburger-close-middle 0.7s ease-in-out forwards;
+  --animate-hamburger-close-bottom: hamburger-close-bottom 0.7s ease-in-out forwards;
+
+  --animate-hamburger-open-top: hamburger-close-top 0.7s ease-in-out reverse forwards;
+  --animate-hamburger-open-middle: hamburger-close-middle 0.7s ease-in-out reverse forwards;
+  --animate-hamburger-open-bottom: hamburger-close-bottom 0.7s ease-in-out reverse forwards;
+
+  @keyframes hamburger-close-top {
+    0% {
+      transform: translateY(0) rotateX(0);
+    }
+    50% {
+      transform: translateY(calc(var(--spacing) * 5)) rotateX(0);
+    }
+    100% {
+      transform: translateY(calc(var(--spacing) * 5)) rotateZ(45deg);
+    }
+  }
+
+  @keyframes hamburger-close-middle {
+    0% {
+      transform: rotateX(0);
+    }
+    50% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateZ(135deg);
+    }
+  }
+
+  @keyframes hamburger-close-bottom {
+    0% {
+      transform: translateY(0) rotateX(0);
+    }
+    50% {
+      transform: translateY(calc(var(--spacing) * -5)) rotateX(0);
+    }
+    100% {
+      transform: translateY(calc(var(--spacing) * -5)) rotateZ(135deg);
+    }
+  }
+}
