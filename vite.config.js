@@ -5,6 +5,7 @@ import { resolve } from 'path'
 
 const root = resolve(__dirname, 'src')
 const outDir = resolve(__dirname, 'dist')
+const publicDir = resolve(__dirname, 'public')
 
 export default defineConfig({
   base: '/100DaysCSS/',
@@ -12,11 +13,12 @@ export default defineConfig({
     tailwindcss(),
   ],
   root,
+  publicDir,
   build: {
     outDir,
     emptyOutDir: true,
     rollupOptions: {
       input: sync("./src/**/*.html".replace(/\\/g, "/")),
     }
-  }
+  },
 })
