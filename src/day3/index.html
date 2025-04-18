@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2</title>
+  </head>
+  <body class="h-svh w-svw">
+    <div id="frame" class="h-screen w-scree flex justify-center items-center bg-black">
+      <a href="../" class="fixed top-2 left-2 border-2 border-amber-50 bg-amber-100 px-3 py-1 rounded-lg font-bold">Back</a>
+      <div class="relative h-[200px] w-[200px] rounded-full overflow-hidden">
+        
+        <div class="w-full h-[120px] animate-[skyColor_8s_linear_infinite] bg-sky-300 overflow-hidden">
+          <div class="w-full animate-[spinSun_8s_linear_infinite]">
+            <div class="absolute left-[2.5%] h-[25px] w-[25px] rounded-full bg-yellow-300 shadow-[0_0_2em_#ffd230]"></div>
+          </div>
+          <div class="w-full animate-[spinSun_8s_linear_infinite]">
+            <div class="absolute right-[2.5%] h-[25px] w-[25px] rounded-full bg-gray-200 shadow-[0_0_2em_#e5e7eb]"></div>
+          </div>
+        </div>
+        <div class="w-full h-[80px] bg-amber-200"></div>
+        <div class="absolute w-full h-full top-0 left-0 bg-stone-50 [clip-path:polygon(20%_60%,50%_30%,65%_60%)]"></div>
+        <div class="absolute w-full h-full top-0 left-0 bg-stone-400 [clip-path:polygon(65%_60%,50%_30%,80%_60%)]"></div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

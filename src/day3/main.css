@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@keyframes spinSun {
+  0% {
+    transform: translateY(100px) rotate(45deg);
+  }
+  100% {
+    transform: translateY(100px) rotate(405deg);
+  }
+}
+
+@keyframes spinMoon {
+  0% {
+    transform: translateY(100px) rotate(225deg);
+  }
+  100% {
+    transform: translateY(100px) rotate(585deg);
+  }
+}
+
+:root {
+  --light-blue: #a2f4fd;
+  --sky-blue: #74d4ff;
+  --sky-blue: #74d4ff;
+  --light-orange: #ffb86a;
+  --deep-blue: #312c85;
+  --dark-indigo: #1e1a4d;
+  --deep-blue: #312c85;
+  --light-yellow: #fef3c6;
+  --light-blue: #a2f4fd;
+}
+
+
+@keyframes skyColor {
+  0% {
+    background-color: var(--light-blue);
+  }
+  12.5% {
+    background-color: var(--sky-blue);
+  }
+  30% {
+    background-color: var(--sky-blue);
+  }
+  50% {
+    background-color: var(--light-orange);
+  }
+  55% {
+    background-color: var(--deep-blue);
+  }
+  70% {
+    background-color: var(--dark-indigo);
+  }
+  85% {
+    background-color: var(--deep-blue);
+  }
+  90% {
+    background-color: var(--light-yellow);
+  }
+  100% {
+    background-color: var(--light-blue);
+  }
+
+}
