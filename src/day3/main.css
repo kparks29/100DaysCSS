@@ -59,5 +59,34 @@
   100% {
     background-color: var(--light-blue);
   }
+}
 
+@keyframes moveShadow {
+  0% {
+    clip-path: polygon(20% 0%, 80% 0, 90% 40%);
+  }
+  12.5% {
+    clip-path: polygon(20% 0%, 80% 0, 60% 30%);
+  }
+  25% {
+    clip-path: polygon(20% 0%, 80% 0, 10% 40%);
+  }
+  37.5% {
+    clip-path: polygon(20% 0%, 80% 0, 5% 10%);
+  }
+  50% {
+    clip-path: polygon(20% 0%, 80% 0%, 0% 0%);
+  }
+  62.5% {
+    clip-path: polygon(20% 0%, 80% 0%, 0% 0%);
+  }
+  75% {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0%);
+  }
+  87.5% {
+    clip-path: polygon(20% 0%, 80% 0, 95% 10%);
+  }
+  100% {
+    clip-path: polygon(20% 0%, 80% 0, 90% 40%);
+  }
 }
