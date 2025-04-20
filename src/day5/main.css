@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+.point {
+  @apply h-3 w-3 rounded-full absolute hover:*:visible hover:*:opacity-100 hover:*:-translate-y-[140%];
+}
+
+.tooltip {
+  @apply absolute opacity-0 min-w-[50px] text-center invisible text-white font-bold p-1 rounded-lg transition-[transform_0.6s,opacity_0.6s] ease-out -translate-x-[19px];
+  @apply after:border-t-6 after:border-x-6 after:border-x-transparent after:border-b-blue-400 after:absolute after:left-[calc(50%-6px)] after:bottom-[-6px];
+}
