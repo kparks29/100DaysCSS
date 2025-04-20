@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@keyframes growShrinkLarge {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  40% {
+    height: 200px;
+    width: 200px;
+  }
+  60% {
+    height: 200px;
+    width: 200px;
+  }
+  100% {
+    height: 0;
+    width: 0;
+  }
+}
+
+@keyframes growShrinkMedium {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  15% {
+    height: 0;
+    width: 0;
+  }
+  42% {
+    height: 140px;
+    width: 140px;
+  }
+  58% {
+    height: 140px;
+    width: 140px;
+  }
+  85% {
+    height: 0;
+    width: 0;
+  }
+  100% {
+    height: 0;
+    width: 0;
+  }
+}
+
+@keyframes growShrinkSmall {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  30% {
+    height: 0;
+    width: 0;
+  }
+  45% {
+    height: 80px;
+    width: 80px;
+  }
+  55% {
+    height: 80px;
+    width: 80px;
+  }
+  70% {
+    height: 0;
+    width: 0;
+  }
+  100% {
+    height: 0;
+    width: 0;
+  }
+}
