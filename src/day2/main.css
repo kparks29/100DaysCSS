@@ -2,44 +2,44 @@
 
 body {
   font-family: 'Courier New', 'Courier', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	/* -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; */
 }
 
 /* Day 2 */
 @keyframes hamburger-close-top {
   0% {
-    transform: translateY(0) rotateX(0);
+    transform: translateY(0) translateZ(0) rotateX(0);
   }
   50% {
-    transform: translateY(calc(0.25rem * 5)) rotateX(0);
+    transform: translateY(calc(0.25rem * 5)) translateZ(0) rotateX(0);
   }
   100% {
-    transform: translateY(calc(0.25rem * 5)) rotateZ(45deg);
+    transform: translateY(calc(0.25rem * 5)) translateZ(0) rotateZ(45deg);
   }
 }
 
 @keyframes hamburger-close-middle {
   0% {
-    transform: rotateX(0);
+    transform: translateZ(0) rotateX(0);
   }
   50% {
-    transform: rotateX(0);
+    transform: translateZ(0) rotateX(0);
   }
   100% {
-    transform: rotateZ(135deg);
+    transform: translateZ(0) rotateZ(135deg);
   }
 }
 
 @keyframes hamburger-close-bottom {
   0% {
-    transform: translateY(0) rotateX(0);
+    transform: translateY(0) translateZ(0) rotateX(0);
   }
   50% {
-    transform: translateY(calc(0.25rem * -5)) rotateX(0);
+    transform: translateY(calc(0.25rem * -5)) translateZ(0) rotateX(0);
   }
   100% {
-    transform: translateY(calc(0.25rem * -5)) rotateZ(135deg);
+    transform: translateY(calc(0.25rem * -5)) translateZ(0) rotateZ(135deg);
   }
 }
 
